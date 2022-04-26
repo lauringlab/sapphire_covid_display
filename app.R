@@ -24,7 +24,7 @@ tx_mi <- filter(tx, GEOID10 %in% zip_mi$Zip.Code)
 county_geo <- readRDS(file = "data/county_map_bones.rds")
 county_geo$NAME <- gsub(" County, Michigan", "", county_geo$NAME)
 
-patient_data <- read.csv("data/patient_data_sample.csv")
+patient_data <- read.csv("data/patient_data_sample.csv", colClasses = "character")
 patient_data <- patient_data %>% mutate(PATIENT_RACE = case_when(PATIENT_RACE == "W" ~ "White or Caucasian", 
                                                                  PATIENT_RACE == "B" ~ "Black or African American", 
                                                                  PATIENT_RACE == "O" ~ "Other", 
