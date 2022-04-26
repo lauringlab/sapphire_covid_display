@@ -21,3 +21,8 @@
 | extra_clade | The Greek letter name for the lineage indicated in RESULT. Ex. Delta, Omicron |
 | PATIENT_SEX | The sex of the individual, indicated as either M or F |
 | APPROX_AGE | The age of the individual in years |
+
+
+### Code
+
+* pulling_county_data_from_state.R - pulls the Cases and Deaths by County by Date of Onset of Symptoms and Date of Death data file from the state website, and saves it as a .csv file to a specified location.
